@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://ysrsw4u0hjhk"]
+
+[ext_resource type="Script" uid="uid://411xmccif7wq" path="res://devScene/pick_up_item.gd" id="1_5d0xx"]
+[ext_resource type="Texture2D" uid="uid://s2x5346j26cy" path="res://Objects/Foliage.png" id="2_msgie"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1bcc4"]
+size = Vector2(98.25, 91.5)
+
+[node name="PickupItem" type="Area2D" groups=["interactable"]]
+script = ExtResource("1_5d0xx")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(102, 112)
+texture = ExtResource("2_msgie")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(101.875, 121)
+shape = SubResource("RectangleShape2D_1bcc4")
