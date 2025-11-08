@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c8sf0b6cwm15d"
-path="res://.godot/imported/Adrien.png-6e255627c5b52150df5b87ea6ff0a7b3.ctex"
+uid="uid://cmdr73w45hqtm"
+path="res://.godot/imported/Adrien.png-1efd3d2e4e9de2f5a26e4310ee39eef9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Characters/Adrien.png"
-dest_files=["res://.godot/imported/Adrien.png-6e255627c5b52150df5b87ea6ff0a7b3.ctex"]
+source_file="res://actors/Player/Adrien.png"
+dest_files=["res://.godot/imported/Adrien.png-1efd3d2e4e9de2f5a26e4310ee39eef9.ctex"]
 
 [params]
 
