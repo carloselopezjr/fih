@@ -1,9 +1,12 @@
 extends CharacterBody2D
 @export var speed: float = 130.0 # can also just use := like var speed := 130
-@onready var anim:= $AnimatedSprite2D
+@onready var anim:= $AnimatedSprite2D 
 var direction := Vector2.ZERO # null direction by default
 var last_facing := "down" # facing down by default
 
+# _ means engine function basically, not one manually called
+
+# Built in function
 # Runs every frame that's tied to physics with respect to movement
 func _physics_process(_delta):
 	# Get movement input
@@ -11,7 +14,7 @@ func _physics_process(_delta):
 		Input.get_action_strength("move_right") - 
 		Input.get_action_strength("move_left"),
 		Input.get_action_strength("move_down") - Input.get_action_strength("move_up")
-		).normalized()
+		).normalized() # normalized makes vector length 1 to prevent op diagonal movement
 		
 		# Apply velocity
 	velocity = direction * speed
@@ -29,4 +32,4 @@ func _update_anim():
 			last_facing = "down" if direction.y > 0 else "up"
 		anim.play("walk_%s" % last_facing)
 	else:
-		anim.play("walk_%s" % last_facing)
+		anim.play("idle_%s" % last_facing)

@@ -1,4 +1,4 @@
-[gd_resource type="TileSet" load_steps=7 format=3 uid="uid://dpkvk1hj4irfc"]
+[gd_resource type="TileSet" load_steps=7 format=3 uid="uid://bap62vu8qo3u5"]
 
 [ext_resource type="Texture2D" uid="uid://dpauev7h5bn58" path="res://Tilesets/Base_Tiles.png" id="1_eo4n4"]
 [ext_resource type="Texture2D" uid="uid://bye250g8cjpaa" path="res://Tilesets/Land_to_Sea Transitions.png" id="2_ifip1"]

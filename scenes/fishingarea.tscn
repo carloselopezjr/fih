@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://b2fhfdifyegic"]
+[gd_scene load_steps=3 format=3 uid="uid://b2fhfdifyegic"]
 
-[ext_resource type="TileSet" uid="uid://dpkvk1hj4irfc" path="res://Tilesets/beach_tileset.tres" id="1_ca00n"]
+[ext_resource type="TileSet" uid="uid://bap62vu8qo3u5" path="res://Tilesets/beach_tileset.tres" id="1_ca00n"]
+[ext_resource type="PackedScene" uid="uid://cem2fxmo5dy18" path="res://actors/Player/player.tscn" id="2_ri5ef"]
 
 [node name="fishingarea" type="Node2D"]
 
@@ -18,3 +19,8 @@ layer_0/tile_data = PackedInt32Array(851985, 131072, 1, 786449, 131072, 1, 91752
 tile_set = ExtResource("1_ca00n")
 format = 2
 layer_0/tile_data = PackedInt32Array(917506, 327682, 2, 851970, 196610, 1, 851969, 327682, 3, 786433, 196610, 2, 720897, 196610, 2, 655361, 196610, 1, 655360, 131074, 1, 983042, 327682, 3, 983043, 393218, 3, 983044, 196610, 1, 1048580, 327682, 3, 1048581, 196610, 1, 1048582, 393218, 2, 393216, 393218, 1, 393217, 196610, 3, 327681, 327682, 2, 262145, 327682, 1, 262146, 196610, 3, 196610, 327682, 1, 196611, 196610, 3, 131075, 327682, 2, 65539, 327682, 1, 65540, 196610, 3, 4, 327682, 1, 5, 393218, 1, 6, 196610, 3, 65538, 131074, 2, 131074, 131074, 2)
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("2_ri5ef")]
+position = Vector2(94, 98)
+rotation = -0.022643927
+speed = 95.0
