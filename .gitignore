@@ -1,3 +1,18 @@
 # Godot 4+ specific ignores
 .godot/
 /android/
+
+# Godot 4
+.godot/
+.import/
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Optional: export configs and build outputs
+export_presets.cfg
+bin/
+obj/
