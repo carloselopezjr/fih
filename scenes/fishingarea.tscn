@@ -1,22 +1,24 @@
-[gd_scene load_steps=15 format=3 uid="uid://b2fhfdifyegic"]
+[gd_scene load_steps=16 format=3 uid="uid://b2fhfdifyegic"]
 
 [ext_resource type="TileSet" uid="uid://bap62vu8qo3u5" path="res://Tilesets/beach_tileset.tres" id="1_ca00n"]
-[ext_resource type="PackedScene" uid="uid://54ou3mnnaqjm" path="res://Animals/flamShortInvert.tscn" id="2_faug1"]
+[ext_resource type="Script" uid="uid://253xvy08dmbj" path="res://scenes/fishingarea.gd" id="1_faug1"]
+[ext_resource type="PackedScene" path="res://Animals/flamShortInvert.tscn" id="2_faug1"]
 [ext_resource type="PackedScene" uid="uid://cem2fxmo5dy18" path="res://actors/Player/player.tscn" id="2_ri5ef"]
 [ext_resource type="PackedScene" uid="uid://dbbvt75di0otw" path="res://Objects/tree1.tscn" id="3_h1nkr"]
 [ext_resource type="PackedScene" uid="uid://6iyrnbkqif3k" path="res://Objects/tree2.tscn" id="3_xs64d"]
-[ext_resource type="PackedScene" uid="uid://bqe1dj6dwa3wy" path="res://Animals/crab.tscn" id="5_nph40"]
-[ext_resource type="PackedScene" uid="uid://dvsgb8y0ih7xq" path="res://Animals/flamingo1.tscn" id="6_cql04"]
+[ext_resource type="PackedScene" uid="uid://bqy4blkjt51a4" path="res://Animals/crab.tscn" id="5_nph40"]
+[ext_resource type="PackedScene" uid="uid://b3l4iich5bw2i" path="res://Animals/flamingo1.tscn" id="6_cql04"]
 [ext_resource type="PackedScene" uid="uid://ctc28vynjlot7" path="res://ui/powerbar.tscn" id="7_8p7s7"]
 [ext_resource type="PackedScene" uid="uid://qkaj4nyapwjp" path="res://devScene/FishingRodItem.tscn" id="8_b1vk7"]
-[ext_resource type="PackedScene" uid="uid://cd00j71wgphja" path="res://Animals/blueCrab.tscn" id="9_dqp1y"]
-[ext_resource type="PackedScene" uid="uid://bmjr1om2pluw3" path="res://Animals/greenCrab.tscn" id="10_bmt7x"]
-[ext_resource type="PackedScene" uid="uid://xycjrs11myof" path="res://Animals/greenCrab2.tscn" id="11_nq580"]
-[ext_resource type="PackedScene" uid="uid://4381w1eh3w4w" path="res://Animals/greenCrab3.tscn" id="12_cqxk7"]
-[ext_resource type="PackedScene" uid="uid://nk1pue36whv0" path="res://Animals/flamingo2.tscn" id="13_56c6a"]
+[ext_resource type="PackedScene" path="res://Animals/blueCrab.tscn" id="9_dqp1y"]
+[ext_resource type="PackedScene" path="res://Animals/greenCrab.tscn" id="10_bmt7x"]
+[ext_resource type="PackedScene" path="res://Animals/greenCrab2.tscn" id="11_nq580"]
+[ext_resource type="PackedScene" path="res://Animals/greenCrab3.tscn" id="12_cqxk7"]
+[ext_resource type="PackedScene" path="res://Animals/flamingo2.tscn" id="13_56c6a"]
 
 [node name="fishingarea" type="Node2D"]
 position = Vector2(11, 0)
+script = ExtResource("1_faug1")
 
 [node name="ground" type="TileMap" parent="."]
 position = Vector2(-32, -1)

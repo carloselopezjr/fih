@@ -1,0 +1,47 @@
+[gd_scene load_steps=7 format=3 uid="uid://0rukr74lw3p1"]
+
+[ext_resource type="Texture2D" uid="uid://7wt1mbxcy2qr" path="res://Objects/rod-Sheet.png" id="1_5fd8l"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x1c3b"]
+atlas = ExtResource("1_5fd8l")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1582e"]
+atlas = ExtResource("1_5fd8l")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6k233"]
+atlas = ExtResource("1_5fd8l")
+region = Rect2(64, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2g6t6"]
+atlas = ExtResource("1_5fd8l")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_y75jk"]
+animations = [{
+"frames": [{
+"duration": 2.0,
+"texture": SubResource("AtlasTexture_x1c3b")
+}, {
+"duration": 2.0,
+"texture": SubResource("AtlasTexture_1582e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6k233")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2g6t6")
+}],
+"loop": false,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Rodwindup" type="Node2D"]
+
+[node name="anim" type="AnimatedSprite2D" parent="."]
+position = Vector2(229, 115)
+sprite_frames = SubResource("SpriteFrames_y75jk")
+frame = 3
+frame_progress = 1.0

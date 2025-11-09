@@ -60,8 +60,6 @@ func _zone_from_charge(t: float) -> int:
 		return 3
 
 func perform_cast(zone: int):
-	
-	# MATCH CASE LIKE A SWITCH CASE
 	match zone:
 		1:
 			print("🎣 Cast landed close to shore!")
